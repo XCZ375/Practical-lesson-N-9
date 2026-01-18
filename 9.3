@@ -1,0 +1,25 @@
+price = int(input("Введите цену:"))
+
+total_coins = 0
+
+# Используем монеты номиналом 25
+while price >= 25:
+    price -= 25
+    total_coins += 1
+
+# Используем монеты номиналом 10
+while price >= 10:
+    price -= 10
+    total_coins += 1
+
+# Используем монеты номиналом 5
+while price >= 5:
+    price -= 5
+    total_coins += 1
+
+# Используем монеты номиналом 1
+while price >= 1:
+    price -= 1
+    total_coins += 1
+
+print(f"Нужно {total_coins} монет")
